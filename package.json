@@ -1,0 +1,22 @@
+{
+  "name": "musicalyze",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c3phal0p0d/musicalyze.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c3phal0p0d/musicalyze/issues"
+  },
+  "homepage": "https://github.com/c3phal0p0d/musicalyze#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
