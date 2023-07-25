@@ -1,10 +1,13 @@
 import React from "react";
+import "../App.css";
+import TopTracks from "./TopTracks";
+import Navigation from "./Navigation";
 
 const Home = () => {
     return ( 
         <>
-            <p>Logged in</p> 
-            <a className="App-link" href={"/auth/logout"}>Logout</a>
+            <Navigation/>
+            <TopTracks/>
         </>
     );
 };

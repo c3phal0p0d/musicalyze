@@ -3,11 +3,12 @@ import "../App.css";
 
 function LoginScreen() {
     return (
-        <div className="App">
-            <header className="App-header">
-                <p>You are not logged in to Spotify</p>
-                <a className="App-link" href={"/auth/login"}>Login</a>
-            </header>
+        <div className="content">
+            <h1>Musicalyze</h1>
+            {/* <p>Analyze your music taste!</p> */}
+            {/* <div className="button"> */}
+            <a className="button" href={"/auth/login"}>Log in</a>
+            {/* </div> */}
         </div>
     );
 }
