@@ -7,7 +7,7 @@ const path = require("path");
 
 dotenv.config();
 
-const PORT = 3000;
+const PORT = 8080;
 const URI = `http://localhost:${PORT}`
 const REDIRECT_URI = `http://localhost:${PORT}/auth/callback`
 const CLIENT_ID = process.env.CLIENT_ID;
@@ -53,10 +53,10 @@ router.get("/callback", async (req, res) => {
     };
 
     req.session.jwt = jwt.sign(sessionJWTObject, JWT_SECRET_KEY);
-    return res.redirect('/');
+    return res.redirect('http://localhost:3000');
 });
 
-router.get('/current-session', (req, res) => {
+router.get("/current-session", (req, res) => {
     jwt.verify(req.session.jwt, JWT_SECRET_KEY, (err, decodedToken) => {
         if (err || !decodedToken) {
             res.send(false);

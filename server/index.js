@@ -6,9 +6,9 @@ const hpp = require("hpp");
 const csurf = require("csurf");
 const path = require("path");
 
-dotenv.config({path: path.resolve(__dirname, '.env')});
+dotenv.config({ path: '../.env' });
 
-const PORT = 3000;
+const PORT = 8080;
 const COOKIE_SECRET = process.env.COOKIE_SECRET;
 
 /* Create app */
